@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <script src="https://kit.fontawesome.com/c739c14eb5.js" crossorigin="anonymous"></script>
+    <title>GitHubApp</title>
+    <link rel="stylesheet" href="styling/style.css">
+</head>
+<body>
+    <div class="main">
+        <header>
+            <h1 class="app-title">GitHub</h1>
+        </header>
+        <div class="content">
+            <div class="left">
+                <div class="card">
+                    <h2>fetch repos by user name</h2>
+                    <form id="user-form">
+                        <label for="">username</label>
+                        <input type="text"  id="username">
+                        <button type="submit"   class="btn-el">Get repos</button>
+                    </form>
+                </div>
+                <div class="card">
+                    <h2>Topics</h2>
+                   <div class="languages">
+                    <button data-lng="html" class="btn-el">html</button>
+                    <button data-lng="css"  class="btn-el">css</button>
+                    <button data-lng="javascript"   class="btn-el">javascript</button>
+                    <button data-lng="php "   class="btn-el">php</button>
+                   </div>
+                </div>
+            </div>
+            <div class="right">
+                <p  id="serach-term"></p>
+                <div id="repos">
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
